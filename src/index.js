@@ -1,11 +1,11 @@
 /*jshint esversion: 6 */
-import getOptions from 'loader-utils';
+import loaderUtils from 'loader-utils';
 import glob from 'glob';
 
 export default function importGlob(source) {
     'use strict';
 
-	const options = Object.assign({}, getOptions(this));
+	const options = Object.assign({}, loaderUtils.getOptions(this));
 	// Default nodir to true
 	options.nodir = typeof options.nodir !== 'undefined' ? options.nodir : true;
 	options.cwd = this.context;

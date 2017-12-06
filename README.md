@@ -4,10 +4,10 @@
     <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg" />
   </a>
   <h1>Glob Loader</h1>
+  <p align="center">Globbing preloader for Webpack</p>
 </div>
 
 <h2 align="center">Install</h2>
-<p align="center">Globbing preloader for Webpack</p>
 
 ```bash
 npm install --save-dev import-glob-loader2

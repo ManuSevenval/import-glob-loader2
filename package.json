@@ -1,6 +1,6 @@
 {
-  "name": "import-glob-loader",
-  "version": "1.0.0",
+  "name": "import-glob-loader2",
+  "version": "1.1.0",
   "description": "Globbing preloader for Webpack",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "loader",
     "glob"
   ],
-  "author": "Alex Lee <aintaer@aintaer.com>",
+  "author": "M.Saad Siddiqui <to.msaads@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "glob": "^5.0.13",
@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aintaer/import-glob-loader.git"
+    "url": "https://github.com/mazemax/import-glob-loader2.git"
   },
   "bugs": {
-    "url": "https://github.com/Aintaer/import-glob-loader/issues"
+    "url": "https://github.com/mazemax/import-glob-loader2/issues"
   },
-  "homepage": "https://github.com/Aintaer/import-glob-loader#readme"
+  "homepage": "https://mazemax.github.io/import-glob-loader2/"
 }

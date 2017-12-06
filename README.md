@@ -1,4 +1,4 @@
-# import-glob-loader
+# import-glob-loader2
 Globbing preloader for Webpack
 
 Expands globbing patterns for import statements. Currently only does vertical expansion, e.g.
@@ -14,7 +14,7 @@ Expands into
 
 ## Install
 ```sh
-npm install import-glob-loader --save-dev
+npm install import-glob-loader2 --save-dev
 ```
 
 ## Usage

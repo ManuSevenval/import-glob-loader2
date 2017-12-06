@@ -8,15 +8,20 @@
 
 <h2 align="center">Install</h2>
 <p align="center">Globbing preloader for Webpack</p>
+
 ```bash
 npm install --save-dev import-glob-loader2
 ```
+
 <h2 align="center">Detail</h2>
 Expands globbing patterns for import statements. Currently only does vertical expansion, e.g.
+
 ```sass
 @import "foo/**/*";
 ```
+
 Expands into
+
 ```sass
 @import "foo/1.scss";
 @import "foo/bar/2.scss";

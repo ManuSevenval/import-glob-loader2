@@ -67,7 +67,6 @@ All options are passthrough to [node-glob](https://github.com/isaacs/node-glob).
 <h2 align="center">Maintainer(s)</h2>
 
 <table>
-  <tbody>
     <tr>
       <td align="center">
         <img width="150" height="150"
@@ -79,5 +78,4 @@ All options are passthrough to [node-glob](https://github.com/isaacs/node-glob).
         <a href="https://github.com/mazemax">M.Saad Siddiqui</a>
       </td>
     </tr>
-  <tbody>
 </table>

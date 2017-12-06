@@ -72,7 +72,10 @@ All options are passthrough to [node-glob](https://github.com/isaacs/node-glob).
       <td align="center">
         <img width="150" height="150"
         src="https://github.com/mazemax.png?v=3&s=150">
-        </br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
         <a href="https://github.com/mazemax">M.Saad Siddiqui</a>
       </td>
     </tr>

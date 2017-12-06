@@ -29,7 +29,7 @@ module: {
    {
      test: /\.scss/,
      enforce: "pre",
-     loader: "import-glob-loader"
+     loader: "import-glob-loader2"
    },
    // ...
  ]
@@ -41,15 +41,10 @@ module: {
   module: {
     preLoaders: [{
       test: /\.scss/,
-      loader: 'import-glob-loader'
+      loader: 'import-glob-loader2'
     }]
   }
 }
-```
-
-Alternatively you can use it as a chained loader
-```js
-require('style!css!sass!import-glob!foo/bar.scss')
 ```
 
 ## Options

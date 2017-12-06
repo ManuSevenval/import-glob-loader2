@@ -1,8 +1,11 @@
-import loaderUtils from 'loader-utils';
+/*jshint esversion: 6 */
+import getOptions from 'loader-utils';
 import glob from 'glob';
 
 export default function importGlob(source) {
-	const options = (this.query === '' ? {} : loaderUtils.parseQuery(this.query));
+    'use strict';
+
+	const options = Object.assign({}, getOptions(this));
 	// Default nodir to true
 	options.nodir = typeof options.nodir !== 'undefined' ? options.nodir : true;
 	options.cwd = this.context;
@@ -11,12 +14,16 @@ export default function importGlob(source) {
 	const qualifier = new RegExp(`^.*\\b${test}\\b(.*)$`, 'gm');
 
 	function expandGlob(result) {
-		if (!result) return;
+		if (!result) {
+			return;
+        }
 		const [match, quote, content] = result;
 		const offset = result.index;
 		const line = result.input;
 
-		if (!glob.hasMagic(content)) return;
+		if (!glob.hasMagic(content)) {
+			return;
+        }
 
 		let pre = line.slice(0, offset),
 			post = line.slice(offset + match.length);
@@ -28,7 +35,9 @@ export default function importGlob(source) {
 
 	const quotedString = /(['"])(.*?)\1/;
 	function expandLine(line, payload) {
-		if (!(payload && payload.trim())) return line;
+		if (!(payload && payload.trim())) {
+			return line;
+        }
 		return expandGlob(quotedString.exec(line)) || line;
 	}
 

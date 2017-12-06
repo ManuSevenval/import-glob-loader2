@@ -2,7 +2,6 @@
   "esnext": true,
   "elision": true,
   "boss": true,
-  "elision": true,
   "eqeqeq": true,
   "eqnull": true,
   "expr": true,

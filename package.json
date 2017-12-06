@@ -4,7 +4,8 @@
   "description": "Globbing preloader for Webpack",
   "main": "index.js",
   "scripts": {
-    "prepublish": "babel src/index.js -o index.js",
+    "prepare": "babel src/index.js -o index.js",
+    "prepublish": "check-node-version --npm \">=4\" || npm run prepare",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,7 +20,8 @@
     "loader-utils": "^0.2.10"
   },
   "devDependencies": {
-    "babel": "^5.6.14"
+    "babel": "^5.6.14",
+    "check-node-version": "^1.1.2"
   },
   "repository": {
     "type": "git",
